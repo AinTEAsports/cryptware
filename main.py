@@ -82,3 +82,7 @@ for file in get_all_files(home_directory):
     
     #File(file).encrypt(args.key)
     pass
+
+
+
+# TODO : different verbose level like "--verbose=(int)" if it is 0 or no verbose flag is given then nothing is shown, if it is 1 only files that are not hidden and if it is 2 everything is shown
