@@ -77,6 +77,9 @@ if (args.encrypt and args.decrypt) or (not args.encrypt and not args.decrypt):
 action: str = "Encrypting" if args.encrypt else "Decrypting"
 
 for file in get_all_files(home_directory):
+    if file in no_encrypt_list:
+        continue
+    
     if args.verbose:
         print(f"[{COLORED_STAR}] {action} file {file}...")
     
